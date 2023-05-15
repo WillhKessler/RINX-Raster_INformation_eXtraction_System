@@ -77,4 +77,4 @@ UNION ALL
 Select * from tmax2019
 );
 Alter table tmaxunion add column filedate date;
-Update tmaxunion set filedate=TO_DATE(substring(filename,19,8),'YYYYMMDD');
+Update tmaxunion set filedate=TO_DATE(substring(filename,19,8),'YYYYMMDD'); # May need to update the format to 
