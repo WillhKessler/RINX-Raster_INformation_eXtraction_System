@@ -1,80 +1,81 @@
-Create table tmaxunion as (Select  * from tmax1981
+Create table pptunion as (
+Select  * from ppt1981
 UNION ALL
-Select * from tmax1982
+Select * from ppt1982
 UNION ALL
-Select * from tmax1983
+Select * from ppt1983
 UNION ALL
-Select * from tmax1984
+Select * from ppt1984
 UNION ALL
-Select * from tmax1985
+Select * from ppt1985
 UNION ALL
-Select * from tmax1986
+Select * from ppt1986
 UNION ALL
-Select * from tmax1987
+Select * from ppt1987
 UNION ALL
-Select * from tmax1988
+Select * from ppt1988
 UNION ALL
-Select * from tmax1989
+Select * from ppt1989
 UNION ALL
-Select * from tmax1990
+Select * from ppt1990
 UNION ALL
-Select * from tmax1991
+Select * from ppt1991
 UNION ALL
-Select * from tmax1992
+Select * from ppt1992
 UNION ALL
-Select * from tmax1993
+Select * from ppt1993
 UNION ALL
-Select * from tmax1994
+Select * from ppt1994
 UNION ALL
-Select * from tmax1995
+Select * from ppt1995
 UNION ALL
-Select * from tmax1996
+Select * from ppt1996
 UNION ALL
-Select * from tmax1997
+Select * from ppt1997
 UNION ALL
-Select * from tmax1998
+Select * from ppt1998
 UNION ALL
-Select * from tmax1999
+Select * from ppt1999
 UNION ALL
-Select * from tmax2000
+Select * from ppt2000
 UNION ALL
-Select * from tmax2001
+Select * from ppt2001
 UNION ALL
-Select * from tmax2002
+Select * from ppt2002
 UNION ALL
-Select * from tmax2003
+Select * from ppt2003
 UNION ALL
-Select * from tmax2004
+Select * from ppt2004
 UNION ALL
-Select * from tmax2005
+Select * from ppt2005
 UNION ALL
-Select * from tmax2006
+Select * from ppt2006
 UNION ALL
-Select * from tmax2007
+Select * from ppt2007
 UNION ALL
-Select * from tmax2008
+Select * from ppt2008
 UNION ALL
-Select * from tmax2009
+Select * from ppt2009
 UNION ALL
-Select * from tmax2010
+Select * from ppt2010
 UNION ALL
-Select * from tmax2011
+Select * from ppt2011
 UNION ALL
-Select * from tmax2012
+Select * from ppt2012
 UNION ALL
-Select * from tmax2013
+Select * from ppt2013
 UNION ALL
-Select * from tmax2014
+Select * from ppt2014
 UNION ALL
-Select * from tmax2015
+Select * from ppt2015
 UNION ALL
-Select * from tmax2016
+Select * from ppt2016
 UNION ALL
-Select * from tmax2017
+Select * from ppt2017
 UNION ALL
-Select * from tmax2018
+Select * from ppt2018
 UNION ALL
-Select * from tmax2019
+Select * from ppt2019
 );
-Alter table tmaxunion add column filedate date;
-Update tmaxunion set filedate=TO_DATE(substring(filename,19,8),'YYYYMMDD'); # May need to update the format to 
+Alter table pptunion add column filedate date;
+Update pptunion set filedate=TO_DATE(substring(filename,19,8),'YYYYMMDD'); # May need to update the format to 
