@@ -1,3 +1,5 @@
+Drop table address If Exists;
+
 Create table addresses (Id character varying(255), longitude float, latitude float, start_date character varying(255), end_date character varying(255));
 copy addresses from '/n/holyscratch01/cga/dkakkar/data/BIL/Input_addresses.csv' (FORMAT csv, HEADER, DELIMITER ',');
 Alter table addresses add column startdate date;
