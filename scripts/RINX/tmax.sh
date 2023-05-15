@@ -1,9 +1,9 @@
 #!/bin/bash
 
-for dir in /n/holyscratch01/cga/jblossom/PRISM_data/tmax/daily/*; # Change to our directory, 
+for dir in /pc/nhair0a/Built_Environment/BE_Data/Geographic_Data/PRISM_daily/PRISM_data/an/ppt/daily/*; # Change to your directory, 
 do
     #echo "$dir"
-    #dir1=/n/holyscratch01/cga/dkakkar/data/BIL/output
+    #dir1=/pc/n3mhs00/Cindy/For_WilliamK # Change the output directory
     IFS='/' # space is set as delimiter
     read -ra ADDR <<< "$dir" # str is read into an array as tokens separated by IFS
     i="${ADDR[-1]}"
