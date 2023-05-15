@@ -78,4 +78,4 @@ UNION ALL
 Select * from ppt2019
 );
 Alter table pptunion add column filedate date;
-Update pptunion set filedate=TO_DATE(substring(filename,19,8),'YYYYMMDD'); # May need to update the format to 
+Update pptunion set filedate=TO_DATE(substring(filename,18,8),'YYYYMMDD'); # May need to update the format to correct length for ppt the year starts at index 18, for tmax it is 19, etc. 
