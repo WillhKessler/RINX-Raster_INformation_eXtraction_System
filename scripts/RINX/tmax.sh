@@ -11,7 +11,7 @@ do
     cmd1="raster2pgsql -d -I -C -M -F -t 100x100 -s 4269 $dir/*.bil tmax$i > tmax$i.sql" # May need to change the 4269 coordinate system, 
     #echo "$cmd1"
     eval "$cmd1"
-    cmd2="psql -h localhost -p 7779 -d postgres -f tmax$i.sql"
+    cmd2="psql -d prod -f tmax$i.sql"
     #echo "$cmd2"
     eval "$cmd2"
     cmd3="rm *.sql"
